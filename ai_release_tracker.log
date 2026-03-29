@@ -1,0 +1,379 @@
+2026-03-25 20:29:25,768 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 20:29:25,768 - __main__ - INFO - Sending test email...
+2026-03-25 20:29:29,310 - utils.emailer - ERROR - Failed to send test email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-2b0bc8e958csm1166695ad.66 - gsmtp')
+2026-03-25 20:29:29,311 - __main__ - ERROR - Failed to send test email
+2026-03-25 20:30:36,264 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 20:30:36,264 - __main__ - INFO - Sending test email...
+2026-03-25 20:30:41,375 - utils.emailer - INFO - Test email sent successfully
+2026-03-25 20:30:41,376 - __main__ - INFO - Test email sent successfully!
+2026-03-25 20:32:58,925 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 20:32:58,929 - utils.storage - INFO - Loaded 0 previously sent links
+2026-03-25 20:32:58,930 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-25 20:32:58,930 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-25 20:33:01,061 - fetchers.databricks - WARNING - Attempt 1 failed for Databricks: HTTPSConnectionPool(host='docs.databricks.com', port=443): Max retries exceeded with url: /en/release-notes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-03-25 20:33:03,063 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 2)
+2026-03-25 20:33:03,877 - fetchers.databricks - WARNING - Attempt 2 failed for Databricks: HTTPSConnectionPool(host='docs.databricks.com', port=443): Max retries exceeded with url: /en/release-notes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-03-25 20:33:05,879 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 3)
+2026-03-25 20:33:06,645 - fetchers.databricks - WARNING - Attempt 3 failed for Databricks: HTTPSConnectionPool(host='docs.databricks.com', port=443): Max retries exceeded with url: /en/release-notes/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-03-25 20:33:06,645 - fetchers.databricks - ERROR - Failed to fetch Databricks updates after 3 attempts
+2026-03-25 20:33:06,645 - __main__ - INFO - Fetched 0 updates from Databricks
+2026-03-25 20:33:06,647 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-25 20:33:08,783 - fetchers.snowflake - WARNING - Attempt 1 failed for Snowflake: HTTPSConnectionPool(host='docs.snowflake.com', port=443): Max retries exceeded with url: /en/release-notes (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-03-25 20:33:10,784 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 2)
+2026-03-25 20:33:11,866 - fetchers.snowflake - WARNING - Attempt 2 failed for Snowflake: HTTPSConnectionPool(host='docs.snowflake.com', port=443): Max retries exceeded with url: /en/release-notes (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-03-25 20:33:13,868 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 3)
+2026-03-25 20:33:14,790 - fetchers.snowflake - WARNING - Attempt 3 failed for Snowflake: HTTPSConnectionPool(host='docs.snowflake.com', port=443): Max retries exceeded with url: /en/release-notes (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))
+2026-03-25 20:33:14,791 - fetchers.snowflake - ERROR - Failed to fetch Snowflake updates after 3 attempts
+2026-03-25 20:33:14,793 - __main__ - INFO - Fetched 0 updates from Snowflake
+2026-03-25 20:33:14,794 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-25 20:33:16,547 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-25 20:33:16,549 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-25 20:33:16,549 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-25 20:33:16,550 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-25 20:33:16,551 - __main__ - INFO - Processing 0 updates from Databricks
+2026-03-25 20:33:16,552 - utils.filter - INFO - Filtering 0 updates from Databricks
+2026-03-25 20:33:16,553 - utils.filter - INFO - Found 0 AI/ML related updates from Databricks
+2026-03-25 20:33:16,555 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 20:33:16,556 - __main__ - INFO - Databricks: 0 new AI updates (from 0 total)
+2026-03-25 20:33:16,557 - __main__ - INFO - Processing 0 updates from Snowflake
+2026-03-25 20:33:16,558 - utils.filter - INFO - Filtering 0 updates from Snowflake
+2026-03-25 20:33:16,559 - utils.filter - INFO - Found 0 AI/ML related updates from Snowflake
+2026-03-25 20:33:16,561 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 20:33:16,562 - __main__ - INFO - Snowflake: 0 new AI updates (from 0 total)
+2026-03-25 20:33:16,564 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-25 20:33:16,565 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-25 20:33:16,565 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-25 20:33:16,567 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 20:33:16,568 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-25 20:33:16,569 - __main__ - INFO - No new AI/ML updates found
+2026-03-25 20:33:20,412 - utils.emailer - INFO - Email sent successfully to 1 recipients
+2026-03-25 20:33:20,413 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-25 20:34:37,783 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 20:34:37,789 - utils.storage - INFO - Loaded 0 previously sent links
+2026-03-25 20:34:37,790 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-25 20:34:37,790 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-25 20:34:40,128 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-25 20:34:40,130 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-25 20:34:40,131 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-25 20:34:42,395 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-25 20:34:42,397 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-25 20:34:42,397 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-25 20:34:43,742 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-25 20:34:43,743 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-25 20:34:43,744 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-25 20:34:43,746 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-25 20:34:43,747 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-25 20:34:43,748 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-25 20:34:45,008 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-25 20:34:45,826 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-25 20:34:47,612 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-25 20:34:47,614 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-25 20:34:47,615 - utils.storage - INFO - Filtered 3 updates, 3 are new
+2026-03-25 20:34:47,616 - __main__ - INFO - Databricks: 3 new AI updates (from 6 total)
+2026-03-25 20:34:47,617 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-25 20:34:47,619 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-25 20:34:54,188 - utils.filter - INFO - Found 5 AI/ML related updates from Snowflake
+2026-03-25 20:34:54,189 - utils.storage - INFO - Filtered 5 updates, 5 are new
+2026-03-25 20:34:54,190 - __main__ - INFO - Snowflake: 5 new AI updates (from 8 total)
+2026-03-25 20:34:54,192 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-25 20:34:54,192 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-25 20:34:54,195 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-25 20:34:54,195 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 20:34:54,197 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-25 20:34:54,198 - __main__ - INFO - Found 8 new AI/ML updates to send
+2026-03-25 20:34:57,686 - utils.emailer - INFO - Email sent successfully to 1 recipients
+2026-03-25 20:34:57,697 - utils.storage - INFO - Saved 7 links to sent_links.json
+2026-03-25 20:34:57,699 - __main__ - INFO - Email sent successfully and sent links updated
+2026-03-25 20:34:57,699 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-25 20:37:37,775 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 20:37:37,790 - utils.storage - INFO - Loaded 7 previously sent links
+2026-03-25 20:37:37,792 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-25 20:37:37,793 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-25 20:37:39,177 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-25 20:37:39,179 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-25 20:37:39,180 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-25 20:37:41,130 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-25 20:37:41,132 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-25 20:37:41,132 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-25 20:37:42,744 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-25 20:37:42,745 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-25 20:37:42,745 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-25 20:37:42,746 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-25 20:37:42,747 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-25 20:37:42,749 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-25 20:37:44,020 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-25 20:37:44,925 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-25 20:37:46,563 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-25 20:37:46,564 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-25 20:37:46,566 - utils.storage - INFO - Filtered 3 updates, 0 are new
+2026-03-25 20:37:46,567 - __main__ - INFO - Databricks: 0 new AI updates (from 6 total)
+2026-03-25 20:37:46,568 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-25 20:37:46,569 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-25 20:37:50,316 - utils.filter - INFO - Found 5 AI/ML related updates from Snowflake
+2026-03-25 20:37:50,317 - utils.storage - INFO - Filtered 5 updates, 0 are new
+2026-03-25 20:37:50,317 - __main__ - INFO - Snowflake: 0 new AI updates (from 8 total)
+2026-03-25 20:37:50,317 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-25 20:37:50,318 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-25 20:37:50,319 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-25 20:37:50,319 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 20:37:50,320 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-25 20:37:50,321 - __main__ - INFO - No new AI/ML updates found
+2026-03-25 20:37:55,710 - utils.emailer - INFO - Email sent successfully to 1 recipients
+2026-03-25 20:37:55,711 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-25 20:44:20,438 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 20:44:20,443 - utils.storage - INFO - Loaded 0 previously sent links
+2026-03-25 20:44:20,445 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-25 20:44:20,445 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-25 20:44:20,840 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-25 20:44:20,840 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-25 20:44:20,842 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-25 20:44:22,827 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-25 20:44:22,828 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-25 20:44:22,829 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-25 20:44:32,553 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-25 20:44:32,554 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-25 20:44:32,555 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-25 20:44:32,555 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-25 20:44:32,556 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-25 20:44:32,557 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-25 20:44:34,338 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-25 20:44:35,364 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-25 20:44:36,885 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-25 20:44:36,888 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-25 20:44:36,888 - utils.storage - INFO - Filtered 3 updates, 3 are new
+2026-03-25 20:44:36,889 - __main__ - INFO - Databricks: 3 new AI updates (from 6 total)
+2026-03-25 20:44:36,890 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-25 20:44:36,891 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-25 20:44:41,048 - utils.filter - INFO - Found 5 AI/ML related updates from Snowflake
+2026-03-25 20:44:41,048 - utils.storage - INFO - Filtered 5 updates, 5 are new
+2026-03-25 20:44:41,049 - __main__ - INFO - Snowflake: 5 new AI updates (from 8 total)
+2026-03-25 20:44:41,050 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-25 20:44:41,051 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-25 20:44:41,052 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-25 20:44:41,052 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 20:44:41,053 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-25 20:44:41,054 - __main__ - INFO - Found 8 new AI/ML updates to send
+2026-03-25 20:45:00,324 - utils.emailer - INFO - Email sent successfully to 3 recipients
+2026-03-25 20:45:00,330 - utils.storage - INFO - Saved 7 links to sent_links.json
+2026-03-25 20:45:00,331 - __main__ - INFO - Email sent successfully and sent links updated
+2026-03-25 20:45:00,332 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-25 22:48:44,694 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 22:48:44,699 - utils.storage - INFO - Loaded 0 previously sent links
+2026-03-25 22:48:44,699 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-25 22:48:44,700 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-25 22:48:45,106 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-25 22:48:45,108 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-25 22:48:45,108 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-25 22:48:46,948 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-25 22:48:46,949 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-25 22:48:46,949 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-25 22:48:49,725 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-25 22:48:49,726 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-25 22:48:49,726 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-25 22:48:49,727 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-25 22:48:49,727 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-25 22:48:49,728 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-25 22:48:50,778 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-25 22:48:51,618 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-25 22:48:54,471 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-25 22:48:54,472 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-25 22:48:54,472 - utils.storage - INFO - Filtered 3 updates, 3 are new
+2026-03-25 22:48:54,472 - __main__ - INFO - Databricks: 3 new AI updates (from 6 total)
+2026-03-25 22:48:54,473 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-25 22:48:54,473 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-25 22:49:20,557 - utils.filter - WARNING - Failed to fetch content from https://docs.snowflake.com/en/release-notes/2026/10_8: HTTPSConnectionPool(host='docs.snowflake.com', port=443): Max retries exceeded with url: /en/release-notes/2026/10_8 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-25 22:49:22,429 - utils.filter - INFO - Found 5 AI/ML related updates from Snowflake
+2026-03-25 22:49:22,429 - utils.storage - INFO - Filtered 5 updates, 5 are new
+2026-03-25 22:49:22,430 - __main__ - INFO - Snowflake: 5 new AI updates (from 8 total)
+2026-03-25 22:49:22,430 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-25 22:49:22,430 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-25 22:49:22,430 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-25 22:49:22,431 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 22:49:22,431 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-25 22:49:22,431 - __main__ - INFO - Found 8 new AI/ML updates to send
+2026-03-25 22:49:29,548 - utils.emailer - INFO - Email sent successfully to 1 recipients
+2026-03-25 22:49:29,551 - utils.storage - INFO - Saved 7 links to sent_links.json
+2026-03-25 22:49:29,552 - __main__ - INFO - Email sent successfully and sent links updated
+2026-03-25 22:49:29,553 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-25 23:01:11,657 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-25 23:01:11,663 - utils.storage - INFO - Loaded 0 previously sent links
+2026-03-25 23:01:11,665 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-25 23:01:11,665 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-25 23:01:33,031 - fetchers.databricks - WARNING - Attempt 1 failed for Databricks: HTTPSConnectionPool(host='docs.databricks.com', port=443): Max retries exceeded with url: /en/release-notes/index.html (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-25 23:01:35,033 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 2)
+2026-03-25 23:01:35,284 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-25 23:01:35,286 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-25 23:01:35,287 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-25 23:01:38,332 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-25 23:01:38,334 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-25 23:01:38,335 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-25 23:01:40,065 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-25 23:01:40,066 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-25 23:01:40,068 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-25 23:01:40,070 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-25 23:01:40,071 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-25 23:01:40,072 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-25 23:01:42,043 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-25 23:01:43,264 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-25 23:01:45,607 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-25 23:01:45,609 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-25 23:01:45,609 - utils.storage - INFO - Filtered 3 updates, 3 are new
+2026-03-25 23:01:45,609 - __main__ - INFO - Databricks: 3 new AI updates (from 6 total)
+2026-03-25 23:01:45,610 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-25 23:01:45,610 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-25 23:01:50,066 - utils.filter - INFO - Found 5 AI/ML related updates from Snowflake
+2026-03-25 23:01:50,067 - utils.storage - INFO - Filtered 5 updates, 5 are new
+2026-03-25 23:01:50,067 - __main__ - INFO - Snowflake: 5 new AI updates (from 8 total)
+2026-03-25 23:01:50,068 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-25 23:01:50,068 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-25 23:01:50,069 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-25 23:01:50,070 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-25 23:01:50,070 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-25 23:01:50,071 - __main__ - INFO - Found 8 new AI/ML updates to send
+2026-03-25 23:01:54,678 - utils.html_emailer - INFO - Premium HTML email sent successfully to 1 recipients
+2026-03-25 23:01:54,687 - utils.storage - INFO - Saved 7 links to sent_links.json
+2026-03-25 23:01:54,689 - __main__ - INFO - Email sent successfully and sent links updated
+2026-03-25 23:01:54,690 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-26 18:31:09,309 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-26 18:31:09,313 - utils.storage - INFO - Loaded 7 previously sent links
+2026-03-26 18:31:09,313 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-26 18:31:09,313 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-26 18:31:09,946 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-26 18:31:09,948 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-26 18:31:09,948 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-26 18:31:12,014 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-26 18:31:12,015 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-26 18:31:12,015 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-26 18:31:15,682 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-26 18:31:15,683 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-26 18:31:15,683 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-26 18:31:15,683 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-26 18:31:15,684 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-26 18:31:15,684 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-26 18:31:17,341 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-26 18:31:18,372 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-26 18:31:21,367 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-26 18:31:21,368 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-26 18:31:21,369 - utils.storage - INFO - Filtered 3 updates, 0 are new
+2026-03-26 18:31:21,370 - __main__ - INFO - Databricks: 0 new AI updates (from 6 total)
+2026-03-26 18:31:21,371 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-26 18:31:21,372 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-26 18:31:46,817 - utils.filter - WARNING - Failed to fetch content from https://docs.snowflake.com/en/release-notes/2026/10_9: HTTPSConnectionPool(host='docs.snowflake.com', port=443): Max retries exceeded with url: /en/release-notes/2026/10_9 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))
+2026-03-26 18:31:48,010 - utils.filter - INFO - Found 6 AI/ML related updates from Snowflake
+2026-03-26 18:31:48,010 - utils.storage - INFO - Filtered 6 updates, 2 are new
+2026-03-26 18:31:48,012 - __main__ - INFO - Snowflake: 2 new AI updates (from 8 total)
+2026-03-26 18:31:48,013 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-26 18:31:48,014 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-26 18:31:48,014 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-26 18:31:48,015 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-26 18:31:48,016 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-26 18:31:48,016 - __main__ - INFO - Found 2 new AI/ML updates to send
+2026-03-26 18:31:48,016 - utils.html_emailer - ERROR - Failed to send HTML email: 'NoneType' object has no attribute 'format'
+2026-03-26 18:31:48,017 - __main__ - ERROR - Failed to send email, not updating sent links
+2026-03-26 18:33:12,160 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-26 18:33:12,162 - utils.storage - INFO - Loaded 7 previously sent links
+2026-03-26 18:33:12,162 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-26 18:33:12,163 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-26 18:33:14,103 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-26 18:33:14,104 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-26 18:33:14,105 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-26 18:33:16,603 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-26 18:33:16,604 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-26 18:33:16,605 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-26 18:33:18,260 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-26 18:33:18,262 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-26 18:33:18,263 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-26 18:33:18,265 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-26 18:33:18,265 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-26 18:33:18,266 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-26 18:33:19,581 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-26 18:33:20,518 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-26 18:33:22,661 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-26 18:33:22,664 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-26 18:33:22,665 - utils.storage - INFO - Filtered 3 updates, 0 are new
+2026-03-26 18:33:22,666 - __main__ - INFO - Databricks: 0 new AI updates (from 6 total)
+2026-03-26 18:33:22,667 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-26 18:33:22,669 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-26 18:33:29,936 - utils.filter - INFO - Found 6 AI/ML related updates from Snowflake
+2026-03-26 18:33:29,937 - utils.storage - INFO - Filtered 6 updates, 2 are new
+2026-03-26 18:33:29,937 - __main__ - INFO - Snowflake: 2 new AI updates (from 8 total)
+2026-03-26 18:33:29,938 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-26 18:33:29,939 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-26 18:33:29,940 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-26 18:33:29,940 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-26 18:33:29,941 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-26 18:33:29,942 - __main__ - INFO - Found 2 new AI/ML updates to send
+2026-03-26 18:33:36,660 - utils.html_emailer - INFO - Premium HTML email sent successfully to 1 recipients
+2026-03-26 18:33:36,668 - utils.storage - INFO - Saved 9 links to sent_links.json
+2026-03-26 18:33:36,669 - __main__ - INFO - Email sent successfully and sent links updated
+2026-03-26 18:33:36,670 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-26 18:37:06,322 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-26 18:37:06,327 - utils.storage - INFO - Loaded 9 previously sent links
+2026-03-26 18:37:06,329 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-26 18:37:06,330 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-26 18:37:07,021 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-26 18:37:07,022 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-26 18:37:07,022 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-26 18:37:10,168 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-26 18:37:10,169 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-26 18:37:10,170 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-26 18:37:12,183 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-26 18:37:12,184 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-26 18:37:12,185 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-26 18:37:12,185 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-26 18:37:12,186 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-26 18:37:12,186 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-26 18:37:14,934 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-26 18:37:16,028 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-26 18:37:17,985 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-26 18:37:17,987 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-26 18:37:17,987 - utils.storage - INFO - Filtered 3 updates, 0 are new
+2026-03-26 18:37:17,988 - __main__ - INFO - Databricks: 0 new AI updates (from 6 total)
+2026-03-26 18:37:17,988 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-26 18:37:17,989 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-26 18:37:22,638 - utils.filter - INFO - Found 6 AI/ML related updates from Snowflake
+2026-03-26 18:37:22,639 - utils.storage - INFO - Filtered 6 updates, 0 are new
+2026-03-26 18:37:22,639 - __main__ - INFO - Snowflake: 0 new AI updates (from 8 total)
+2026-03-26 18:37:22,639 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-26 18:37:22,640 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-26 18:37:22,640 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-26 18:37:22,641 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-26 18:37:22,641 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-26 18:37:22,642 - __main__ - INFO - No new AI/ML updates found
+2026-03-26 18:37:26,813 - utils.html_emailer - INFO - Premium HTML email sent successfully to 1 recipients
+2026-03-26 18:37:26,814 - __main__ - INFO - AI Release Notes Tracker completed successfully
+2026-03-26 18:41:14,207 - __main__ - INFO - AI Release Notes Tracker started
+2026-03-26 18:41:14,210 - utils.storage - INFO - Loaded 9 previously sent links
+2026-03-26 18:41:14,210 - __main__ - INFO - Starting to fetch updates from all sources
+2026-03-26 18:41:14,211 - fetchers.databricks - INFO - Fetching Databricks updates (attempt 1)
+2026-03-26 18:41:14,831 - fetchers.databricks - INFO - Found 6 Databricks updates
+2026-03-26 18:41:14,832 - __main__ - INFO - Fetched 6 updates from Databricks
+2026-03-26 18:41:14,833 - fetchers.snowflake - INFO - Fetching Snowflake updates (attempt 1)
+2026-03-26 18:41:17,121 - fetchers.snowflake - INFO - Found 8 Snowflake updates
+2026-03-26 18:41:17,121 - __main__ - INFO - Fetched 8 updates from Snowflake
+2026-03-26 18:41:17,122 - fetchers.gcp - INFO - Fetching GCP updates (attempt 1)
+2026-03-26 18:41:20,174 - fetchers.gcp - WARNING - RSS feed parsing warning: <unknown>:11:0: syntax error
+2026-03-26 18:41:20,175 - fetchers.gcp - INFO - Found 0 GCP updates
+2026-03-26 18:41:20,176 - __main__ - INFO - Fetched 0 updates from GCP
+2026-03-26 18:41:20,177 - __main__ - INFO - Processing updates: filtering AI content and removing duplicates
+2026-03-26 18:41:20,178 - __main__ - INFO - Processing 6 updates from Databricks
+2026-03-26 18:41:20,178 - utils.filter - INFO - Filtering 6 updates from Databricks
+2026-03-26 18:41:22,402 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/ja/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/ja/release-notes/
+2026-03-26 18:41:23,940 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/aws/pt/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/aws/pt/release-notes/
+2026-03-26 18:41:27,615 - utils.filter - WARNING - Failed to fetch content from https://docs.databricks.com/aws/en/gcp/en/release-notes/: 404 Client Error: Not Found for url: https://docs.databricks.com/aws/en/gcp/en/release-notes/
+2026-03-26 18:41:27,618 - utils.filter - INFO - Found 3 AI/ML related updates from Databricks
+2026-03-26 18:41:27,619 - utils.storage - INFO - Filtered 3 updates, 0 are new
+2026-03-26 18:41:27,620 - __main__ - INFO - Databricks: 0 new AI updates (from 6 total)
+2026-03-26 18:41:27,620 - __main__ - INFO - Processing 8 updates from Snowflake
+2026-03-26 18:41:27,621 - utils.filter - INFO - Filtering 8 updates from Snowflake
+2026-03-26 18:41:32,058 - utils.filter - INFO - Found 6 AI/ML related updates from Snowflake
+2026-03-26 18:41:32,059 - utils.storage - INFO - Filtered 6 updates, 0 are new
+2026-03-26 18:41:32,059 - __main__ - INFO - Snowflake: 0 new AI updates (from 8 total)
+2026-03-26 18:41:32,060 - __main__ - INFO - Processing 0 updates from GCP
+2026-03-26 18:41:32,060 - utils.filter - INFO - Filtering 0 updates from GCP
+2026-03-26 18:41:32,060 - utils.filter - INFO - Found 0 AI/ML related updates from GCP
+2026-03-26 18:41:32,062 - utils.storage - INFO - Filtered 0 updates, 0 are new
+2026-03-26 18:41:32,062 - __main__ - INFO - GCP: 0 new AI updates (from 0 total)
+2026-03-26 18:41:32,062 - __main__ - INFO - No new AI/ML updates found
+2026-03-26 18:41:38,362 - utils.html_emailer - INFO - Premium HTML email sent successfully to 4 recipients
+2026-03-26 18:41:38,363 - __main__ - INFO - AI Release Notes Tracker completed successfully

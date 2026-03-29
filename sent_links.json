@@ -1,0 +1,14 @@
+{
+  "links": [
+    "https://docs.snowflake.com/en/release-notes/all-release-notes",
+    "https://docs.snowflake.com/en/release-notes/2026/10_9",
+    "https://docs.snowflake.com/en/release-notes/2026/10_10",
+    "https://docs.snowflake.com/en/release-notes/2026/other/2026-03-26-dynamic-table-scheduler-attribute",
+    "https://docs.snowflake.com/en/release-notes/2026/10_8",
+    "https://learn.microsoft.com/azure/databricks/release-notes/",
+    "https://docs.databricks.com/aws/en/release-notes/",
+    "https://docs.snowflake.com/en/release-notes/overview",
+    "https://docs.snowflake.com/en/release-notes/new-features"
+  ],
+  "last_updated": "1774459914.6868525"
+}
